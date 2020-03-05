@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+$fwhite : #ffffff;
+$btn-blue : #38aef0;
+
 .wrapper {
   display: flex;
   height: 100vh;
@@ -23,14 +26,14 @@
       display: flex;
       justify-content: space-between;
       line-height: 20px;
-      color: #ffffff;
+      color: $fwhite;
       font-weight: bold;
       &__icons {
         width: 60px;
         text-align: right;
       .contents__btn {
         text-decoration: none;
-        color: #ffffff;
+        color: $fwhite;
         margin-left: 5px;
         }
       }
@@ -40,7 +43,7 @@
     background-color:#2f3e51;
     height: calc(100% - 100px);
     .main-items {
-      color: #ffffff;
+      color: $fwhite;
       font-weight: bold;
       padding: 20px 20px 40px 20px;
       .group-name {
@@ -59,7 +62,7 @@
   width: calc(100vw - 300px);
   height: 100%;
   &__group-info {
-    background-color: #ffffff;
+    background-color: $fwhite;
     height: 100px;
     border-bottom: 1px solid #eeeeee;
     display: flex;
@@ -83,10 +86,10 @@
       .edit__btn {
         text-decoration: none;
         font-size: 16px;
-        color: #38aef0;
+        color: $btn-blue;
         padding: 12px 20px;
         margin: 28px 0px;
-        border: solid #38aef0;
+        border: solid $btn-blue;
         border-width: thin;
       }
     }
@@ -132,7 +135,7 @@
       line-height: 90px;
       &__text {
         height: 50px;
-        background-color: white;
+        background-color: $fwhite;
         width: 100%;
         margin: 0 15px 0 40px;
         padding-left: 10px;
@@ -148,7 +151,7 @@
       }
     }
     .send-btn {
-      background-color: #38aef0;
+      background-color: $btn-blue;
       height: 50px;
       display: flex;
       align-items: center;
@@ -156,7 +159,7 @@
       padding: 0px 40px;
       .send__btn {
         text-decoration: none;
-        color: white;
+        color: $fwhite;
       }
     }
   }
