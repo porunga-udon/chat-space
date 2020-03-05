@@ -42,14 +42,14 @@ $btn-blue : #38aef0;
   &__group-name {
     background-color:#2f3e51;
     height: calc(100% - 100px);
-    .main-items {
+    .group-box {
       color: $fwhite;
       font-weight: bold;
       padding: 20px 20px 40px 20px;
-      .group-name {
+      &__name {
         font-size: 16px;
       }
-      .group-message {
+      &__message {
         font-size: 11px;
         margin-top: 5px;
       }
