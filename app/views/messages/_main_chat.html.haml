@@ -1,0 +1,30 @@
+.chat-main
+  .chat-main__group-info
+    .group-index
+      .group-index__name
+        test
+      .group-index__member
+        Member:Masa
+    .group-edit
+      =link_to "#", class: "edit__btn" do
+        Edit
+
+  .chat-main__message-list
+    .message
+      .message-box
+        .message-box__name
+          masa
+        .message-box__date
+          2019/11/20(wed) 17:43:01
+      .message-text
+        おはよう！
+
+  .chat-main__message-form
+    .input-box
+      %input{type: "text" , class:"input-box__text", placeholder: "type a message"}
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class:"input-box__image-file"}
+    .send-btn
+      =link_to "#", class: "send__btn" do
+        Send
