@@ -48,16 +48,18 @@ $btn-blue : #38aef0;
       padding: 20px 20px 40px 20px;
       &__name {
         font-size: 16px;
+        color: $fwhite;
       }
       &__message {
         font-size: 11px;
         margin-top: 5px;
+        color: $fwhite;
       }
     }
   }
 }
 
-// メイン
+// --------------------------------------------------メイン----------------------------------------------------------------
 .chat-main {
   width: calc(100vw - 300px);
   height: 100%;
@@ -72,12 +74,16 @@ $btn-blue : #38aef0;
       &__name {
         color: #333333;
         font-size: 20px;
+        margin-bottom: 15px;
       }
-      &__member {
+      &__member-list {
         color: #999999;
-        font-size: 12px;
+        font-size: 14px;
         padding-bottom: 0px;
-        margin-top: 15px;
+        display: flex;
+        &__name {
+          margin-left: 5px;
+        }
       }
     }
     .group-edit {
@@ -97,6 +103,7 @@ $btn-blue : #38aef0;
   &__message-list {
     background-color: #fafafa;
     height: calc(100% - 190px);
+    overflow: scroll;
     .message {
       padding-top: 35px;
       margin: 0px 0px 46px 40px;
@@ -126,7 +133,7 @@ $btn-blue : #38aef0;
     width: 100%;
     padding: 20px 0;
   }
-  
+
   .new_message {
     display: flex;
     justify-content: space-between;
@@ -168,49 +175,3 @@ $btn-blue : #38aef0;
     padding: 0 30px;
   }
 }
-
-
-
-
-
-
-
-// .input-box{
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   position: relative;
-//   width: 100%;
-//   line-height: 90px;
-//   &__text {
-//     height: 50px;
-//     background-color: $fwhite;
-//     width: 100%;
-//     margin: 0 15px 0 40px;
-//     padding-left: 10px;
-//   }
-//   &__image {
-//     position: absolute;
-//     right: 10px;
-//     padding: 0px 40px;
-//     cursor: pointer;
-//   }
-//   &__image-file {
-//     display: none;
-//   }
-// }
-// .send-btn {
-//   background-color: $btn-blue;
-//   height: 50px;
-//   display: flex;
-//   align-items: center;
-//   margin-right: 40px;
-//   padding: 0px 40px;
-//   .send__btn {
-//     text-decoration: none;
-//     color: $fwhite;
-//   }
-// }
-
-
-
