@@ -48,10 +48,12 @@ $btn-blue : #38aef0;
       padding: 20px 20px 40px 20px;
       &__name {
         font-size: 16px;
+        color: $fwhite;
       }
       &__message {
         font-size: 11px;
         margin-top: 5px;
+        color: $fwhite;
       }
     }
   }
@@ -97,6 +99,7 @@ $btn-blue : #38aef0;
   &__message-list {
     background-color: #fafafa;
     height: calc(100% - 190px);
+    overflow: scroll;
     .message {
       padding-top: 35px;
       margin: 0px 0px 46px 40px;
@@ -126,7 +129,7 @@ $btn-blue : #38aef0;
     width: 100%;
     padding: 20px 0;
   }
-  
+
   .new_message {
     display: flex;
     justify-content: space-between;

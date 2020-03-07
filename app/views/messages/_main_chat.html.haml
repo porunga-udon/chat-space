@@ -10,14 +10,7 @@
         Edit
 
   .chat-main__message-list
-    .message
-      .message-box
-        .message-box__name
-          masa
-        .message-box__date
-          2019/11/20(wed) 17:43:01
-      .message-text
-        おはよう！
+    = render @messages
 
   .chat-main__message-form
     = form_for [@group, @message] do |f|
