@@ -20,11 +20,10 @@
         おはよう！
 
   .chat-main__message-form
-    .input-box
-      %input{type: "text" , class:"input-box__text", placeholder: "type a message"}
-      %label{class: "input-box__image"}
-        = icon('fas', 'image')
-        %input{type: "file", class:"input-box__image-file"}
-    .send-btn
-      =link_to "#", class: "send__btn" do
-        Send
+    = form_for [@group, @message] do |f|
+      .input-box
+        = f.text_field :text, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'input-box__image-file'
+      = f.submit 'Send', class: 'send-btn'

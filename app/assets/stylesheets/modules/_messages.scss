@@ -123,45 +123,49 @@ $btn-blue : #38aef0;
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .new_message {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    .input-box{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
+  }
+  
+  .input-box {
+    position: relative;
+    width: 100%;
+    margin-left: 40px;
+    
+    &__text {
       width: 100%;
-      line-height: 90px;
-      &__text {
-        height: 50px;
-        background-color: $fwhite;
-        width: 100%;
-        margin: 0 15px 0 40px;
-        padding-left: 10px;
-      }
-      &__image {
-        position: absolute;
-        right: 10px;
-        padding: 0px 40px;
-        cursor: pointer;
-      }
-      &__image-file {
-        display: none;
-      }
-    }
-    .send-btn {
-      background-color: $btn-blue;
       height: 50px;
-      display: flex;
-      align-items: center;
-      margin-right: 40px;
-      padding: 0px 40px;
-      .send__btn {
-        text-decoration: none;
-        color: $fwhite;
-      }
+      padding-left: 10px;
+  
     }
+    &__image {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+    &__image-file {
+      display: none;
+    }
+  }
+  
+  .icon {
+    font-size: 2em;
+  }
+  
+  .send-btn {
+    text-decoration: none;
+    color: $fwhite;
+    background-color: $btn-blue;
+    margin: 0 40px 0 15px;
+    width: 100px;
+    cursor: pointer;
+    padding: 0 30px;
   }
 }
 
@@ -171,6 +175,42 @@ $btn-blue : #38aef0;
 
 
 
+// .input-box{
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   position: relative;
+//   width: 100%;
+//   line-height: 90px;
+//   &__text {
+//     height: 50px;
+//     background-color: $fwhite;
+//     width: 100%;
+//     margin: 0 15px 0 40px;
+//     padding-left: 10px;
+//   }
+//   &__image {
+//     position: absolute;
+//     right: 10px;
+//     padding: 0px 40px;
+//     cursor: pointer;
+//   }
+//   &__image-file {
+//     display: none;
+//   }
+// }
+// .send-btn {
+//   background-color: $btn-blue;
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   margin-right: 40px;
+//   padding: 0px 40px;
+//   .send__btn {
+//     text-decoration: none;
+//     color: $fwhite;
+//   }
+// }
 
 
 
