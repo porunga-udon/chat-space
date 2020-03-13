@@ -46,6 +46,9 @@ $btn-blue : #38aef0;
       color: $fwhite;
       font-weight: bold;
       padding: 20px 20px 40px 20px;
+      &__link {
+        text-decoration: none;
+      }
       &__name {
         font-size: 16px;
         color: $fwhite;
