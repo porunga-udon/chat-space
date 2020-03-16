@@ -29,14 +29,16 @@ $(function(){
     let html = `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
     $(`#${userId}`).append(html);
   }
+
   $('#user-search-field').on("keyup",function(){
     var input = $('#user-search-field').val();
-    $.ajax({
-      type: "GET",
-      url: "/users",
-      dataType: "json",
-      data: { keyword: input },
-    })
+    var group_id = $('#group_id').val();
+      $.ajax({
+        type: "GET",
+        url: '/users',
+        dataType: "json",
+        data: { keyword: input, group_id: group_id },
+      })
       .done(function(users) {
         $("#user-search-result").empty();
 
