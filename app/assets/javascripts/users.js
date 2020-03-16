@@ -31,9 +31,11 @@ $(function(){
   }
   $('#user-search-field').on("keyup",function(){
     var input = $('#user-search-field').val();
+    var group_id = $('#group_id').val();
+    var url = '/groups/' + group_id + '/users'
     $.ajax({
       type: "GET",
-      url: "/users",
+      url: url,
       dataType: "json",
       data: { keyword: input },
     })
